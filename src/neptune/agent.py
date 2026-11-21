@@ -6,7 +6,7 @@ from agno.tools.mcp import MCPTools
 async def main():
     async with MCPTools(url="https://docs.agno.com/mcp") as mcp:
         agent = Agent(
-            model=Ollama(id="llama3.1:8b"),
+            model=Ollama(id="qwen3:4b"),
             tools=[mcp]
         )
 
